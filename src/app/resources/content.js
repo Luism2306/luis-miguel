@@ -1,15 +1,13 @@
-import { InlineCode } from "@/once-ui/components";
-
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Luis',
+    lastName:  'Miguel',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Middle FrontEnd',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Colombia',      
+    languages: ['Español'] 
 }
 
 const newsletter = {
@@ -47,14 +45,14 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Middle FrontEnd encargado de la experiencia de usuario</>,
+    subline: <>Soy un Middle FrontEnd, donde creo experiencias de usuario intuitivas. Después del horario laboral, creo mis propios proyectos.</>
 }
 
 const about = {
-    label: 'About',
-    title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    label: 'Sobre mi',
+    title: 'Sobre mi',
+    description: `Meet ${person.name}, ${person.role} desde ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: false
@@ -68,8 +66,8 @@ const about = {
     },
     intro: {
         display: true,
-        title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        title: 'Introducción',
+        description: <>Luis Miguel is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
